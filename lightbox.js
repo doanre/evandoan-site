@@ -42,3 +42,14 @@ document.addEventListener("keydown", function (e) {
     }
   }
 });
+
+// Preload high-resolution images after page load
+window.addEventListener("load", function () {
+  images.forEach((img) => {
+    const originalSrc = img.dataset.original;
+    if (originalSrc) {
+      const i = new Image();
+      i.src = originalSrc;
+    }
+  });
+});
