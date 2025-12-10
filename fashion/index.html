@@ -1,40 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fashion | Evan Doan</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
-<body>
-    <header>
-        <div class="header-logo-container">
-            <a href="/" class="header-logo-link">
-                <img src="//evandoan.com/LogoImages/edboston larger boston copy.png" alt="Evan Doan Boston Logo" class="header-logo-img">
+    <head>
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fashion | Evan Doan</title>
+        <link rel="stylesheet" href="../styles.css" />
+    </head>
+    <body>
+        <header>
+            <div class="header-logo-container">
+                <a href="/" class="header-logo-link">
+                    <img
+                        src="//evandoan.com/LogoImages/edboston larger boston copy.png"
+                        alt="Evan Doan Boston Logo"
+                        class="header-logo-img"
+                    />
+                </a>
+            </div>
+            <nav class="main-nav">
+                <a href="/photo/" class="main-link">photo</a>
+                <a href="/fashion/" class="main-link active-link">fashion</a>
+            </nav>
+        </header>
+        <main>
+            <div
+                style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 70vh;
+                "
+            >
+                <h1
+                    style="
+                        color: inherit;
+                        font-family: &quot;Cochin&quot;, Georgia, serif;
+                        font-size: 2em;
+                        font-weight: 400;
+                        margin: 0;
+                    "
+                >
+                    w.i.p
+                </h1>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2025 Evan Doan. All rights reserved.</p>
+            <a href="mailto:evan@evandoan.com" class="email-btn"
+                >evan@evandoan.com</a
+            >
+            <a
+                href="https://www.instagram.com/owndoan"
+                class="footer-btn"
+                aria-label="Placeholder Button"
+                target="_blank"
+                rel="noopener"
+            >
+                <img
+                    src="//evandoan.com/LogoImages/instalogo.webp"
+                    alt="Footer Button"
+                />
             </a>
+        </footer>
+        <!-- Lightbox overlay for enlarged images -->
+        <div id="lightbox-overlay">
+            <img id="lightbox-img" src="" alt="Enlarged image" />
         </div>
-        <nav class="main-nav">
-            <a href="/photo/" class="main-link">photo</a>
-            <a href="/fashion/" class="main-link active-link">fashion</a>
-        </nav>
-    </header>
-    <main>
-        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 70vh;">
-            <h1 style="color: inherit; font-family: 'Cochin', Georgia, serif; font-size: 2.0em; font-weight: 400; margin: 0;">w.i.p</h1>
-        </div>
-    </main>
-    <footer>
-        <p>&copy; 2025 Evan Doan. All rights reserved.</p>
-    	<a href="mailto:evan@evandoan.com" class="email-btn">evan@evandoan.com</a>
-        <a href="https://www.instagram.com/owndoan" class="footer-btn" aria-label="Placeholder Button" target="_blank" rel="noopener">
-            <img src="//evandoan.com/LogoImages/instalogo.jpg" alt="Footer Button" />
-        </a>
-    </footer>
-    <!-- Lightbox overlay for enlarged images -->
-    <div id="lightbox-overlay">
-        <img id="lightbox-img" src="" alt="Enlarged image" />
-    </div>
-    <script> src="lightbox.js"</script>
-</body>
+        <script>
+            src = "lightbox.js";
+        </script>
+    </body>
 </html>
