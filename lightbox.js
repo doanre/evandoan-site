@@ -7,7 +7,7 @@ images.forEach((img, idx) => {
   img.style.cursor = "pointer";
   img.addEventListener("click", function () {
     currentIndex = idx;
-    lightboxImg.src = this.src;
+    lightboxImg.src = this.dataset.original || this.src;
     overlay.style.display = "flex";
   });
 });
@@ -37,7 +37,8 @@ document.addEventListener("keydown", function (e) {
       } else if (e.key === "ArrowRight") {
         currentIndex = (currentIndex - 1 + images.length) % images.length;
       }
-      lightboxImg.src = images[currentIndex].src;
+      lightboxImg.src =
+        images[currentIndex].dataset.original || images[currentIndex].src;
     }
   }
 });
